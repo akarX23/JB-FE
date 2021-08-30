@@ -1,4 +1,4 @@
-// THIS OBJECT SHOULD BE SAME IN ./src/helpers/theme.js
+// THIS OBJECT SHOULD BE SIMILAR TO ./helpers/theme.js
 const themeConstants = {
   paper: "#F9F9F9",
   primary: {

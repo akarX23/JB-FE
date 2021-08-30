@@ -12,4 +12,4 @@ const createStoreWithMiddleware = applyMiddleware(
 
 const makeStore = (context) => createStoreWithMiddleware(reducers);
 
-export const wrapper = createWrapper(makeStore, { debug: true });
+export const wrapper = createWrapper(makeStore, { debug: false });

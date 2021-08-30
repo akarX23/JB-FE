@@ -1,0 +1,12 @@
+.horizontal-contain {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+.card-scroll {
+  width: 100%;
+}

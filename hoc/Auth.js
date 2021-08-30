@@ -12,7 +12,7 @@ import { auth } from "../actions/user_actions";
 import { ThemeProvider } from "@material-ui/core";
 import { theme } from "../helpers/theme";
 
-export default (ComposedClass, authUsers = null) => {
+const Auth = (ComposedClass, authUsers = null) => {
   class AuthenticationCheck extends Component {
     state = {
       loading: false,
@@ -68,3 +68,5 @@ export default (ComposedClass, authUsers = null) => {
 
   return connect(mapStateToProps, mapDispatchToProps)(AuthenticationCheck);
 };
+
+export default Auth;

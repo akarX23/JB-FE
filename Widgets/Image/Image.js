@@ -4,7 +4,7 @@ import React from "react";
 
 const ImageAbstract = ({ containerClass, objectFit, layout, src, alt }) => {
   return (
-    <div className={`relative ${containerClass}`}>
+    <div className={`relative ${containerClass} `}>
       <Image
         src={src}
         layout={layout ? layout : "fill"}
