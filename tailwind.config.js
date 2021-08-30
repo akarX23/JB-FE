@@ -25,7 +25,13 @@ const themeConstants = {
 };
 
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  mode: "jit",
+  purge: [
+    "./pages/*.{js,ts,jsx,tsx}",
+    "./Components/**/*.{js,ts,jsx,tsx}",
+    "./hoc/*.{js,ts,jsx,tsx}",
+    "./Widgets/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
