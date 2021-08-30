@@ -30,3 +30,7 @@ body {
 .add-transition {
   @apply transition-all ease-in-out duration-200;
 }
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}

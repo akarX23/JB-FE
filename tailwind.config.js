@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 // THIS OBJECT SHOULD BE SIMILAR TO ./helpers/theme.js
 const themeConstants = {
   paper: "#F9F9F9",
@@ -44,7 +46,11 @@ module.exports = {
         "fg-dark": themeConstants.fg.dark,
       },
     },
-    screens: themeConstants.breakpoints,
+    screens: {
+      ...defaultTheme.screens,
+      ...themeConstants.breakpoints,
+      ha: { raw: "(hover: hover)" },
+    },
   },
   variants: {
     extend: {},

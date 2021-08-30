@@ -12,7 +12,9 @@ const BookCard = ({ img, rating, description, rent }) => {
   const [wishlisted, setWishlisted] = useState(false);
 
   return (
-    <div className="p-5 pb-3 bg-primary-main flex w-full items-stretch rounded-lg shadow-md cursor-pointer transform hover:-translate-y-2 transition-all duration-200 ease-in hover:shadow-lg">
+    <div
+      className={`p-5 pb-3 bg-primary-main flex w-full items-stretch rounded-lg shadow-md cursor-pointer transform transition-all ha:hover:-translate-y-2  duration-200 ease-in ha:hover:shadow-lg`}
+    >
       <Image
         src={img}
         containerClass="w-28 mr-4 bg-paper rounded-lg overflow-hidden"

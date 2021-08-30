@@ -11,6 +11,7 @@ import { auth } from "../actions/user_actions";
 //MUI Theme
 import { ThemeProvider } from "@material-ui/core";
 import { theme } from "../helpers/theme";
+import CssBaseline from "@material-ui/core/CssBaseline";
 
 const Auth = (ComposedClass, authUsers = null) => {
   class AuthenticationCheck extends Component {
@@ -43,13 +44,9 @@ const Auth = (ComposedClass, authUsers = null) => {
 
       return (
         <ThemeProvider theme={theme}>
+          <CssBaseline />
           <Layout>
-            <ComposedClass
-              user={this.props.user}
-              history={this.props.history}
-              // queries={this.props.match.params}
-              {...this.props}
-            />
+            <ComposedClass user={this.props.user} {...this.props} />
           </Layout>
         </ThemeProvider>
       );

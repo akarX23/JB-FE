@@ -20,15 +20,16 @@
 .ham-icon > div:nth-child(3) {
   width: 60%;
 }
+@media (hover: hover) {
+  .ham-icon:hover > div:nth-child(1) {
+    width: 100%;
+  }
 
-.ham-icon:hover > div:nth-child(1) {
-  width: 100%;
-}
+  .ham-icon:hover > div:nth-child(2) {
+    width: 70%;
+  }
 
-.ham-icon:hover > div:nth-child(2) {
-  width: 70%;
-}
-
-.ham-icon:hover > div:nth-child(3) {
-  width: 50%;
+  .ham-icon:hover > div:nth-child(3) {
+    width: 50%;
+  }
 }

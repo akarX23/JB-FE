@@ -68,7 +68,7 @@ const Home = ({ user: details }) => {
   const getSecondRowItem = (avatar, title) => (
     <div className={`rounded-lg flex items-center md:py-3`}>
       <div
-        className={`rounded-full md:w-14 md:h-14 w-12 h-12 text-xl justify-center p-4 flex items-center mr-4`}
+        className={`rounded-full md:w-14 md:h-14 w-12 h-12 text-xl justify-center p-4 flex items-center mr-4 text-fg-dark`}
         style={{ backgroundColor: secondRowColors[avatar - 1] }}
       >
         {avatar}
@@ -78,7 +78,7 @@ const Home = ({ user: details }) => {
   );
 
   const categoryCard = (img, title) => (
-    <div className="w-48 sm:w-56 mr-4 text-center pb-3 cursor-pointer add-transition transform hover:-translate-y-1 shadow-md hover:shadow-lg">
+    <div className="w-48 sm:w-56 mr-4 text-center pb-3 cursor-pointer add-transition transform ha:hover:-translate-y-1 shadow-md hover:shadow-lg">
       <ImageAbstract
         containerClass="w-full h-36 sm:h-48"
         src={img}
