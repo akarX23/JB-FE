@@ -39,7 +39,7 @@ const BookCard = ({ img, rating, description, rent }) => {
           >
             <IconButton
               className="self-end"
-              size="small"
+              size="medium"
               onClick={() => setWishlisted(!wishlisted)}
             >
               {wishlisted ? (

@@ -18,6 +18,7 @@ import toddleImg from "../assets/Images/toddler-book.jpg";
 import kidsImg from "../assets/Images/kidsBooks.jpg";
 import fictionImg from "../assets/Images/fictionBooks.jpg";
 import nonFictionImg from "../assets/Images/non-fiction.jpg";
+import Meta from "../Components/Meta/Meta";
 
 const useStyles = makeStyles((theme) => ({
   btn: {
@@ -30,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Home = ({ user: details }) => {
+  console.log(process.env.STUFF);
   const classes = useStyles();
   let secondRowColors = ["#FEEEC8", "#CEEFFE", "#D4F8C4", "#D8DAFE"];
   let firstRowColors = ["#db904a", "#8F9CF1", "#6FBA6E"];
@@ -92,6 +94,7 @@ const Home = ({ user: details }) => {
 
   return (
     <>
+      <Meta title="Home" />
       <div className="w-full">
         <HorizontalScroll
           items={[
@@ -190,6 +193,11 @@ const Home = ({ user: details }) => {
       </Button>
     </>
   );
+};
+
+const getServerSideProps = () => {
+  console.log(process.env.STUFF);
+  return {};
 };
 
 export default Auth(Home);

@@ -1,31 +1,13 @@
 import React from "react";
-import Head from "next/head";
 
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
+import Meta from "../Components/Meta/Meta";
 
 const Layout = (props) => {
   return (
     <>
-      <Head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-
-        <link rel="manifest" href="/manifest.json" />
-
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        />
-
-        <title>Just Books</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Meta title={"Just Books"} />
 
       <main>
         <div
